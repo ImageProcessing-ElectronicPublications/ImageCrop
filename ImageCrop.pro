@@ -12,25 +12,23 @@ TARGET = ImageCrop
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
-        mainwindow.cpp \
-    settingdialog.cpp \
-    mainview.cpp \
-    resizedialog.cpp
+SOURCES += src/main.cpp\
+           src/mainwindow.cpp \
+           src/settingdialog.cpp \
+           src/mainview.cpp \
+           src/resizedialog.cpp
 
-HEADERS  += mainwindow.h \
-    settingdialog.h \
-    mainview.h \
-    resizedialog.h
+HEADERS  += src/mainwindow.h \
+            src/settingdialog.h \
+            src/mainview.h \
+            src/resizedialog.h
 
-FORMS    += mainwindow.ui \
-    settingdialog.ui \
-    resizedialog.ui
+FORMS    += src/mainwindow.ui \
+            src/settingdialog.ui \
+            src/resizedialog.ui
 
-RESOURCES += \
-    ImageCrop.qrc
+RESOURCES += src/ImageCrop.qrc
 
-RC_FILE += \
-    ImageCrop.rc
+RC_FILE += src/ImageCrop.rc
 
-TRANSLATIONS += zh_CN.ts
+TRANSLATIONS += src/zh_CN.ts
